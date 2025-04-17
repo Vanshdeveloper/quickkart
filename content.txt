@@ -1,0 +1,71 @@
+🛒 QUICKCART — Your Speedy Shopping Partner
+
+🏠 Hero Section:
+Headline:
+"Shopping, Simplified."
+
+Subtext:
+Get what you need — faster, smarter, smoother.
+
+CTA Buttons:
+🛍️ Shop Now
+🔍 Browse Products
+
+
+⚡ Features Section:
+Feature 1:
+🕒 Fast Checkout — No more long processes, just click and go.
+Feature 2:
+📦 Wide Range of Products — From gadgets to groceries, we’ve got you.
+Feature 3:
+💳 Secure Payments — 100% safe transactions, always.
+
+
+🔧 How It Works Section:
+Browse your favorite products
+Add to cart with one click
+Checkout in under a minute
+Get it delivered — ASAP!
+
+
+💬 Why QuickCart?
+We're here to save your time.
+Minimal steps, maximum convenience.
+
+
+📩 Subscribe Section:
+Heading:
+Stay in the loop!
+Input:
+Email input box
+Subscribe button
+
+
+📞 Footer:
+About Us
+Contact
+Terms & Conditions
+Privacy Policy
+Social Media Icons (Insta, X, etc.)
+
+
+
+
+⚡ QuickCart Color Palette (Dark Mode Vibe):
+🌑 Backgrounds:
+#0D0D0D → Rich Black (main bg)
+#1A1A1A → Charcoal Gray (cards/sections)
+#121212 → Deep Dark (footer, overlays)
+
+💚 Accent / Primary Highlights:
+#00FFAB → Neon Mint Green (CTA buttons, icons, hovers)
+#00E0FF → Neon Cyan (headings or secondary CTA)
+#FFD700 → Soft Neon Yellow (small highlights like borders/icons)
+
+🤍 Text Colors:
+#F5F5F5 → Soft White (main text)
+#CCCCCC → Light Gray (subtext/labels)
+#888888 → Muted Gray (less important text)
+
+🔴 Error / Warnings (optional):
+#FF4C4C → Alert red (payment failure, error messages)

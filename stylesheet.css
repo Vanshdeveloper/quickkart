@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+:root {
+    --bg-main-color: #0D0D0D;
+    --charcoal-grey: #1A1A1A;
+    --deep-dark: #121212;
+
+    --neon-mint: #00FFAB;
+    --neon-cyan: #00E0FF;
+    --soft-neon-yellow: #FFD700;
+
+    --soft-white: #F5F5F5;
+    --light-grey: #CCCCCC;
+    --muted-gray: #888888;
+
+    --alert-red: #FF4C4C;
+
+    --main-font: 'Be Vietnam Pro', sans-serif;
+    --secondary-font: "Rubik", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--bg-main-color);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 100%;
+    background-color: var(--muted-gray);
+    border-radius: 50px;
+}
+
+
+/* Navbar Section */
+header {
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-main-color);
+}
+
+header .logo {
+    color: var(--soft-white);
+    font-size: 26px;
+    font-family: var(--main-font);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: var(--soft-white);
+    font-family: var(--secondary-font);
+}
+
+nav ul li:hover {
+    color: var(--light-grey);
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+
+.navControlBtns {
+    display: none;
+}
+
+
+/* Hero Section */
+#hero {
+    background: url('assests/hero-img.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero .hero-headline {
+    padding: 0 0 12px 0;
+    font-family: var(--main-font);
+    font-size: 30px;
+    color: var(--soft-white);
+}
+
+#hero .hero-subtext {
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    color: var(--soft-white);
+    text-align: center;
+}
+
+#hero .hero-btn {
+    width: 110px;
+    margin: 12px 0 0 0;
+    padding: 12px;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-family: var(--main-font);
+    background-color: var(--neon-mint);
+}
+
+#hero .hero-btn:hover {
+    background-color: var(--light-grey);
+    cursor: pointer;
+}
+
+/* Features section */
+#features {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bg-main-color);
+    gap: 18px;
+}
+
+#features .features-heading {
+    padding: 0 0 12px 0;
+    text-align: center;
+    font-size: 28px;
+    font-family: var(--main-font);
+    color: var(--soft-white);
+}
+
+.features-content {
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--soft-white);
+    gap: 12px;
+}
+
+.features-content p span {
+    font-weight: 600;
+}
+
+.features-content p {
+    font-family: var(--main-font);
+    font-size: 16px;
+}
+
+
+/* HIW section */
+#hiw {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--charcoal-grey);
+    gap: 18px;
+}
+
+#hiw h1 {
+    padding: 0 0 12px 0;
+    text-align: center;
+    font-size: 28px;
+    font-family: var(--main-font);
+    color: var(--soft-white);
+}
+
+#hiw .hiw-steps {
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--soft-white);
+    gap: 12px;
+}
+
+#hiw .hiw-steps p {
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: var(--soft-white);
+}
+
+#hiw .hiw-steps p span {
+    font-weight: 600;
+}
+
+
+/* Why QuickKart section */
+#whyQK {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bg-main-color);
+    gap: 18px;
+}
+
+#whyQK h1 {
+    padding: 0 0 14px 0;
+    text-align: center;
+    font-size: 28px;
+    font-family: var(--main-font);
+    color: var(--soft-white);
+}
+
+#whyQK .whyQk-content {
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--soft-white);
+    font-size: 17px;
+    font-family: var(--secondary-font);
+    gap: 10px;
+}
+
+
+/* Subscribe Section */
+#subscribe-section {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: var(--charcoal-grey);
+}
+
+
+#subscribe-section p {
+    font-size: 20px;
+    font-family: var(--main-font);
+    color: var(--soft-white);
+}
+
+#subscribe-section .input-fields {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#subscribe-section .input-fields input {
+    padding: 12px;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-family: var(--main-font);
+}
+#subscribe-section .input-fields button {
+    padding: 12px;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-family: var(--main-font);
+    background-color: var(--neon-mint);
+}
+#subscribe-section .input-fields button:hover {
+    background-color: var(--muted-gray);
+    color: var(--soft-white);
+    cursor: pointer;
+}
+
+
+
+/* Responsive section */
+@media (max-width: 650px) {
+    nav {
+        width: 200px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-color: var(--charcoal-grey);
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navControlBtns {
+        display: flex;
+    }
+
+    .navControlBtns #openNavIcon {
+        display: flex;
+    }
+
+    .navControlBtns #closeNavIcon {
+        display: none;
+    }
+
+    #features {
+        height: 300px;
+        gap: 20px;
+    }
+
+    #features .features-heading {
+        padding: 0 0 14px 0;
+        font-size: 22px;
+    }
+
+    .features-content {
+        padding: 0 12px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: var(--soft-white);
+        gap: 12px;
+    }
+
+    #hiw {
+        height: 300px;
+        gap: 12px;
+    }
+
+    #hiw h1 {
+        padding: 0 0 14px 0;
+        font-size: 22px;
+    }
+
+    .hiw-steps {
+        padding: 0 12px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: var(--soft-white);
+        gap: 12px;
+    }
+
+    #whyQK h1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    #hero .hero-headline {
+        padding: 0 12px 15px 12px;
+        font-size: 20px;
+    }
+
+    #hero .hero-subtext {
+        padding: 0 12px;
+        font-size: 16px;
+    }
+}
