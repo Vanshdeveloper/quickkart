@@ -45,10 +45,11 @@ header {
     background-color: var(--bg-main-color);
 }
 
-header .logo {
+#logo h2 {
     color: var(--soft-white);
     font-size: 26px;
     font-family: var(--main-font);
+    font-weight: 500;
 }
 
 nav ul {
@@ -110,7 +111,8 @@ nav ul li:hover {
 }
 
 #hero .hero-btn:hover {
-    background-color: var(--light-grey);
+    background-color: var(--muted-grey);
+    color: var(--soft-white);
     cursor: pointer;
 }
 
@@ -119,8 +121,8 @@ nav ul li:hover {
     height: 300px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
     background-color: var(--bg-main-color);
     gap: 18px;
 }
@@ -151,14 +153,20 @@ nav ul li:hover {
     font-size: 16px;
 }
 
+.side-img img {
+    /* height: 100px; */
+    width: 400px;
+    border-radius: 20px;
+}
+
 
 /* HIW section */
 #hiw {
     height: 300px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
     background-color: var(--charcoal-grey);
     gap: 18px;
 }
@@ -196,10 +204,13 @@ nav ul li:hover {
     height: 300px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-evenly;
     background-color: var(--bg-main-color);
     gap: 18px;
+}
+
+#whyQK .side-img img {
+    width: 240px;
 }
 
 #whyQK h1 {
@@ -226,15 +237,15 @@ nav ul li:hover {
 #subscribe-section {
     height: 300px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 15px;
     background-color: var(--charcoal-grey);
 }
 
 
-#subscribe-section p {
+#subscribe-section .input-fields p {
+    padding: 0 0 12px 0;
     font-size: 20px;
     font-family: var(--main-font);
     color: var(--soft-white);
@@ -254,6 +265,7 @@ nav ul li:hover {
     font-size: 16px;
     font-family: var(--main-font);
 }
+
 #subscribe-section .input-fields button {
     padding: 12px;
     border: none;
@@ -262,6 +274,7 @@ nav ul li:hover {
     font-family: var(--main-font);
     background-color: var(--neon-mint);
 }
+
 #subscribe-section .input-fields button:hover {
     background-color: var(--muted-gray);
     color: var(--soft-white);
@@ -269,8 +282,77 @@ nav ul li:hover {
 }
 
 
+/* Footer section */
+footer {
+    padding: 0 20px;
+    height: 100px;
+    background-color: var(--bg-main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer #logo h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer .copyright {
+    color: var(--soft-white);
+    font-family: var(--main-font);
+}
+
+footer .social-links {
+    display: flex;
+    gap: 12px;
+}
+
+footer .social-links .facebook a,
+footer .social-links .instagram a,
+footer .social-links .twitter a {
+    height: 40px;
+    width: 40px;
+    /* padding: 4px; */
+    border: 2px solid #00FFAB;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .social-links .facebook a:hover,
+footer .social-links .instagram a:hover,
+footer .social-links .twitter a:hover {
+    box-shadow: 0 0 12px #00FFAB;
+    background-color: var(--neon-mint);
+    color: #000;
+}
+
+footer .social-links svg {
+    height: 20px;
+}
+
 
 /* Responsive section */
+
+@media (max-width: 1122px) {
+    #features {
+        padding: 0 20px;
+    }
+
+    .side-img img {
+        width: 300px;
+    }
+
+    #whyQK .side-img img {
+        width: 240px;
+    }
+
+    #subscribe-section .side-img img {
+        width: 240px;
+    }
+}
+
 @media (max-width: 650px) {
     nav {
         width: 200px;
@@ -290,6 +372,10 @@ nav ul li:hover {
         gap: 20px;
     }
 
+    nav ul li {
+        font-size: 20px;
+    }
+
     .navControlBtns {
         display: flex;
     }
@@ -303,8 +389,10 @@ nav ul li:hover {
     }
 
     #features {
-        height: 300px;
+        padding: 50px 0;
+        height: 100%;
         gap: 20px;
+        flex-direction: column;
     }
 
     #features .features-heading {
@@ -322,8 +410,10 @@ nav ul li:hover {
     }
 
     #hiw {
-        height: 300px;
-        gap: 12px;
+        padding: 50px 0;
+        height: 100%;
+        gap: 39px;
+        flex-direction: column;
     }
 
     #hiw h1 {
@@ -340,8 +430,29 @@ nav ul li:hover {
         gap: 12px;
     }
 
+    #whyQK {
+        padding: 50px 0;
+        height: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
     #whyQK h1 {
         font-size: 22px;
+    }
+
+    #subscribe-section {
+        padding: 50px 0;
+        height: 100%;
+        flex-direction: column;
+
+    }
+
+    footer {
+        height: 100%;
+        padding: 30px 0;
+        flex-direction: column;
+        gap: 30px;
     }
 }
 
@@ -354,5 +465,9 @@ nav ul li:hover {
     #hero .hero-subtext {
         padding: 0 12px;
         font-size: 16px;
+    }
+
+    .side-img img {
+        width: 250px;
     }
 }
