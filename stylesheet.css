@@ -251,6 +251,10 @@ nav ul li:hover {
     color: var(--soft-white);
 }
 
+#subscribe-section .side-img img {
+    width: 240px;
+}
+
 #subscribe-section .input-fields {
     width: 250px;
     display: flex;
