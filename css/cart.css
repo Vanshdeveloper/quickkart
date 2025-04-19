@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+:root {
+    --bg-main-color: #0D0D0D;
+    --charcoal-grey: #1A1A1A;
+    --deep-dark: #121212;
+
+    --neon-mint: #00FFAB;
+    --neon-cyan: #00E0FF;
+    --soft-neon-yellow: #FFD700;
+
+    --soft-white: #F5F5F5;
+    --light-grey: #CCCCCC;
+    --muted-gray: #888888;
+
+    --alert-red: #FF4C4C;
+
+    --main-font: 'Be Vietnam Pro', sans-serif;
+    --secondary-font: "Rubik", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--bg-main-color);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 100%;
+    background-color: var(--muted-gray);
+    border-radius: 50px;
+}
+
+
+/* Navbar Section */
+header {
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-main-color);
+}
+
+#logo h2 {
+    color: var(--soft-white);
+    font-size: 26px;
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: var(--soft-white);
+    font-family: var(--secondary-font);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--soft-white);
+}
+
+nav ul li a:hover {
+    color: var(--light-grey);
+    cursor: pointer;
+    border-bottom: 2px solid #CCCCCC;
+    transition: none;
+}
+
+#active_link {
+    border-bottom: 2px solid #CCCCCC;
+}
+
+.navControlBtns {
+    display: none;
+}
+
+
+/* Responsive design  */
+@media (max-width: 650px) {
+    nav {
+        width: 200px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-color: var(--charcoal-grey);
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul li {
+        font-size: 20px;
+    }
+
+    .navControlBtns {
+        display: flex;
+    }
+
+    .navControlBtns #openNavIcon {
+        display: flex;
+    }
+
+    .navControlBtns #closeNavIcon {
+        display: none;
+    }
+}

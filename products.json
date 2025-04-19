@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Earbuds",
+        "price": 2999,
+        "image": "products-img/earbuds-img.png",
+        "category": "Electronics"
+    },
+    {
+        "id": 2,
+        "name": "Smart Watch",
+        "price": 4999,
+        "image": "products-img/watch.webp",
+        "category": "Electronics"
+    },
+    {
+        "id": 3,
+        "name": "Gaming Mouse",
+        "price": 1299,
+        "image": "products-img/gaming-mouse.avif",
+        "category": "Accessories"
+    },
+    {
+        "id": 4,
+        "name": "Bluetooth Speaker",
+        "price": 1899,
+        "image": "products-img/speaker.jpg",
+        "category": "Electronics"
+    },
+    {
+        "id": 5,
+        "name": "Running Shoes",
+        "price": 2499,
+        "image": "products-img/shoes.png",
+        "category": "Footwear"
+    },
+    {
+        "id": 6,
+        "name": "Backpack",
+        "price": 1499,
+        "image": "products-img/backpack.avif",
+        "category": "Bags"
+    },
+    {
+        "id": 7,
+        "name": "Digital Camera",
+        "price": 11999,
+        "image": "products-img/camera.jpg",
+        "category": "Electronics"
+    },
+    {
+        "id": 8,
+        "name": "Laptop Stand",
+        "price": 999,
+        "image": "products-img/laptop-stand.jpg",
+        "category": "Accessories"
+    },
+    {
+        "id": 9,
+        "name": "LED Desk Lamp",
+        "price": 799,
+        "image": "products-img/desk-lamp.jpg",
+        "category": "Home"
+    },
+    {
+        "id": 10,
+        "name": "Casual T-Shirt",
+        "price": 699,
+        "image": "products-img/t-shirt.png",
+        "category": "Clothing"
+    },
+    {
+        "id": 11,
+        "name": "Wired Headphones",
+        "price": 1599,
+        "image": "products-img/headphone-img.png",
+        "category": "Electronics"
+    },
+    {
+        "id": 12,
+        "name": "Notebook Set",
+        "price": 299,
+        "image": "products-img/notebook-set.jpg",
+        "category": "Stationery"
+    },
+    {
+        "id": 13,
+        "name": "Desk Organizer",
+        "price": 449,
+        "image": "products-img/desk-organizer.jpg",
+        "category": "Home"
+    },
+    {
+        "id": 14,
+        "name": "RGB Strip",
+        "price": 799,
+        "image": "products-img/rgb-strip.webp",
+        "category": "Electronics"
+    },
+    {
+        "id": 15,
+        "name": "Men’s Wallet",
+        "price": 799,
+        "image": "products-img/mens-wallet.webp",
+        "category": "Accessories"
+    },
+    {
+        "id": 16,
+        "name": "Electric Kettle",
+        "price": 1799,
+        "image": "products-img/electric-kettle.jpg",
+        "category": "Home"
+    },
+    {
+        "id": 17,
+        "name": "Sunglasses",
+        "price": 899,
+        "image": "products-img/sunglasses.webp",
+        "category": "Fashion"
+    },
+    {
+        "id": 18,
+        "name": "Power Bank",
+        "price": 1299,
+        "image": "products-img/powerbank.jpg",
+        "category": "Electronics"
+    },
+    {
+        "id": 19,
+        "name": "Keyboard Combo",
+        "price": 1799,
+        "image": "products-img/keyboard.jpg",
+        "category": "Electronics"
+    },
+    {
+        "id": 20,
+        "name": "Yoga Mat",
+        "price": 599,
+        "image": "products-img/yogamat.jpg",
+        "category": "Fitness"
+    }
+]
