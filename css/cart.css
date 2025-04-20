@@ -84,6 +84,107 @@ nav ul li a:hover {
     display: none;
 }
 
+#cart-container {
+    margin: 20px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-item {
+    padding: 10px 10px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e2e2e2;
+    border-radius: 13px;
+    gap: 20px;
+}
+
+.cart-item .product-image img {
+    width: 70px;
+    border-radius: 10px;
+}
+
+.cart-item .product-details h4 {
+    font-family: var(--main-font);
+    font-size: 17px;
+}
+.cart-item .product-details p {
+    font-family: var(--secondary-font);
+    font-size: 17px;
+}
+
+.cart-item .cta-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cart-item .quantity {
+    padding: 12px;
+    width: 80px;
+    height: 35px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #888888;
+}
+.cart-item .quantity .decrease {
+    padding: 0 24px 0 0;
+    font-size: 17px;
+    cursor: pointer;
+}
+.cart-item .quantity .increase {
+    padding: 0 0 0 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.cart-item .quantity h4 {
+    font-family: var(--main-font);
+}
+
+.cart-item button {
+    width: 100%;
+    height: 30px;
+    border-radius: 9px;
+    border: none;
+    background-color: var(--alert-red);
+    color: var(--soft-white);
+}
+
+#checkOutSection {
+    padding: 0 30px;
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.totalCost p {
+    font-family: var(--main-font);
+}
+.totalCost h3 {
+    font-family: var(--main-font);
+}
+
+#checkOutSection button {
+    width: 100px;
+    padding: 10px;
+    font-family: var(--main-font);
+    border-radius: 9px;
+    border: none;
+    background-color: #80ff80;
+    
+}
 
 /* Responsive design  */
 @media (max-width: 650px) {
@@ -119,5 +220,19 @@ nav ul li a:hover {
 
     .navControlBtns #closeNavIcon {
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-item {
+        padding: 10px 12px;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 0;
+        border-bottom: 2px solid #888888;
+        gap: 12px;
+    }
+    #cart-container {
+        gap: 0px;
     }
 }

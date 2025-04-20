@@ -1,13 +1,29 @@
-const productGrid = document.getElementById('productGrid');
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+function addToCart(product) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const existingProduct = cart.find(p => p.id === product.id);
+
+    if (existingProduct) {
+        existingProduct.quantity += 1;
+    } else {
+        product.quantity = 1;
+        cart.push(product);
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert(`${product.name} added to cart!`);
+}
+
+const productGrid = document.getElementById('productGrid');
 fetch('products.json')
-.then(response => response.json())
-.then(data => {
-    renderProducts(data);
-})
-.catch(error => {
-    console.error("Error loading products:", error);
-});
+    .then(response => response.json())
+    .then(data => {
+        renderProducts(data);
+    })
+    .catch(error => {
+        console.error("Error loading products:", error);
+    });
 
 function renderProducts(products) {
     products.forEach(product => {
@@ -24,7 +40,11 @@ function renderProducts(products) {
                 <div class="add-to-cart-btn">
                     <button>Add to Cart</button>
                 </div>
-            </div>`
+            </div>`;
+
+        card.querySelector('button').addEventListener('click', () => {
+            addToCart({ ...product, quantity: 1 });
+        });
 
         productGrid.appendChild(card);
     });
